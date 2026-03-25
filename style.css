@@ -1,0 +1,212 @@
+:root {
+  --azul: #29a1f7;
+  --amarelo: #FFD700;
+  --verde: #008000;
+  --vermelho: #FF0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #212225;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 2.6em;
+  font-weight: bold;
+  background-color: var(--azul);
+  color: white;
+}
+
+header img {
+  width: 350px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  min-height: 85vh;
+  width: 80vw;
+  margin: auto;  
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  font-size: 0.9em;
+  border-top: 1px solid black;
+  background-color: var(--azul);
+  color: white;
+}
+
+h1 {
+  width: 80%;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  min-width: 500px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+}
+
+form label {
+  font-size: 0.6em;
+}
+
+#esporte-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 90%;
+}
+
+.esporte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 0.4em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  background-size: cover;
+  background-position: top;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition-duration: 1s;
+}
+
+.esporte:nth-child(1) {
+  border: 5px solid var(--azul);
+  background-image: url('imagens/imagem1.jpg');
+  
+}
+
+.esporte:nth-child(2) {
+  border: 5px solid var(--amarelo);
+  background-image: url('imagens/imagem2.jpg');
+}
+
+.esporte:nth-child(3) {
+  border: 5px solid black;
+  background-image: url('imagens/imagem3.jpg');
+}
+
+.esporte:nth-child(4) {
+  border: 5px solid var(--verde);
+  background-image: url('imagens/imagem4.jpg');
+}
+
+.esporte:nth-child(5) {
+  border: 5px solid var(--vermelho);
+  background-image: url('imagens/imagem5.jpg');
+  grid-column: span 2;
+}
+
+.esporte button {
+  padding: 10px 15px;
+  border-radius: 0.4em;
+  background-color: white;
+  text-decoration: none;
+  text-shadow: none;
+  color: black;
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  border: none;
+}
+
+.esporte button:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+#esporte1FecharButton, #esporte2FecharButton, #esporte3FecharButton, #esporte4FecharButton, #esporte5FecharButton {
+  display: none;
+}
+
+.aba {
+  display: flex;
+  flex-direction: column;
+}
+
+.aba:hover {
+  cursor: pointer;
+}
+
+.aba summary {
+  min-width: 500px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+  background-color: gray;
+}
+
+.aba summary::marker{
+  content: none;
+}
+
+.aba button {
+  border: 1px solid black;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.6em;
+}
+
+#menuAbas1, #menuAbas2, #menuAbas3, #menuAbas4, #menuAbas5 {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 500px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px 2px black;
+  border-radius: 0.4em;
+  backdrop-filter: blur(5px);
+}
+
+.mediaIdade {
+  border: none;
+  width: 70px;
+}
